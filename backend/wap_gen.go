@@ -96,6 +96,7 @@ func createHandler(pageData Page) httprouter.Handle {
 var htmlTemplate =`<html>
 <head>
   <meta charset="utf-8">
+  <style>body { margin: 0; }</style>
   <script>
 	const socket = new WebSocket('ws://192.168.1.155:8081');
 	socket.addEventListener('open', function(event) {
